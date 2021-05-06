@@ -1,6 +1,5 @@
 package com.devsuperior.dsvendas.entities;
 
-import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -20,8 +19,7 @@ import lombok.NoArgsConstructor;
 @Data
 @Entity
 @Table(name = "tb_sellers")
-public class Seller implements Serializable{
-	private static final long serialVersionUID = 1L;
+public class Seller {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
